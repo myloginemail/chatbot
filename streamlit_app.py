@@ -23,7 +23,7 @@ def get_response(prompt, client):
         st.markdown(prompt)
 
     stream = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4o-mini",
         messages=st.session_state.messages,
         stream=True,
     )
